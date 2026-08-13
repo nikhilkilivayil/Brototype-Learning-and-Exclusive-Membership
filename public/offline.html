@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline · Brototype Learn</title>
+<style>
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    font-family: Roboto, Helvetica, Arial, sans-serif; background: #FDF7FF; color: #1C1B1F;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #141218; color: #E6E0E9; }
+  }
+  .card { text-align: center; padding: 32px; max-width: 420px; }
+  .badge {
+    width: 72px; height: 72px; border-radius: 20px; background: #6750A4; color: #fff;
+    display: inline-flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: 16px;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 8px; }
+  p { color: #79747E; line-height: 1.5; margin: 0 0 20px; }
+  button {
+    border: 0; border-radius: 999px; padding: 12px 28px; font-size: 1rem; font-weight: 600;
+    background: #6750A4; color: #fff; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">🎓</div>
+    <h1>You're offline</h1>
+    <p>Brototype Learn needs an internet connection for videos and doubt support. Reconnect and try again.</p>
+    <button onclick="location.reload()">Retry</button>
+  </div>
+</body>
+</html>

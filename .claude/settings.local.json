@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(npm run *)",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"console.log\\(process.versions.icu, \\(new Date\\('2026-08-01T13:15:00Z'\\)\\).toLocaleString\\('en-IN', {day:'numeric',month:'short',year:'numeric',hour:'numeric',minute:'2-digit',hour12:true,timeZone:'Asia/Kolkata'}\\).split\\(''\\).map\\(c=>c.codePointAt\\(0\\).toString\\(16\\)\\).join\\(' '\\)\\)\")",
+      "Bash(rm -f .claude/launch.json)",
+      "Bash(rmdir .claude)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d['version'], d.get\\('engines'\\)\\)\")",
+      "Bash(npx -y node@20.11.0 -e ' *)",
+      "Bash(npx -y node@18.13.0 -e ' *)",
+      "WebSearch",
+      "Bash(PORT=4545 npm run start)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4545/)",
+      "Bash(curl -s http://localhost:4545/manifest.webmanifest)",
+      "Bash(curl -s -o /dev/null -w \"sw.js: %{http_code}\" http://localhost:4545/sw.js)",
+      "Bash(curl -sI http://localhost:4545/sw.js)",
+      "Bash(node --check public/sw.js)",
+      "Bash(curl -s -o /dev/null -w \"offline.html: %{http_code}\\\\nicon-512: \" http://localhost:4545/offline.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4545/icons/icon-512.png)",
+      "Bash(curl -s -o /dev/null -w \"app: %{http_code}\\\\n\" http://localhost:3100/)",
+      "Bash(curl -s -o /dev/null -w \"manifest: %{http_code}\\\\n\" http://localhost:3100/manifest.webmanifest)",
+      "Bash(curl -s -o /dev/null -w \"sw: %{http_code}\\\\n\" http://localhost:3100/sw.js)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(ssh -T -o BatchMode=yes -o ConnectTimeout=5 git@github.com)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m 'Brototype Learning Portal — full build *)"
+    ]
+  }
+}
