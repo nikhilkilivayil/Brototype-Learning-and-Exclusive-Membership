@@ -1,0 +1,9 @@
+# Netlify configuration — build the app with the official Next.js runtime
+# (server components, route handlers, middleware, server actions all run as
+# Netlify Functions; static assets go to the CDN).
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
